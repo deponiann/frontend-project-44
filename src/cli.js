@@ -1,8 +1,7 @@
 import readlineSync from 'readline-sync';
 
-function cli() {
-  const name = readlineSync.question('May I have your name?: ');
-  console.log(`Hello, ${name}!`);
-}
+export const username = readlineSync.question('Welcome to the Brain Games!\nMay I have your name?: ');
 
-export default cli;
+export function cli() {
+  console.log(`Hello, ${username}!`);
+}
