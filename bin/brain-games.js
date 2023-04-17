@@ -1,6 +1,10 @@
 #!/usr/bin/env node
-import Game from './brain-even.js';
+import evenGame from './brain-even.js';
 import { username, cli } from '../src/cli.js';
+import calcGame from './brain-calc.js';
+import gcdGame from './brain-gcd.js';
 
 cli();
-Game(username);
+// evenGame(username);
+// calcGame(username);
+// gcdGame(username);
