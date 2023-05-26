@@ -15,5 +15,5 @@ export default function progressionGame(username) {
       return;
     }
   }
-  console.log(`Congratulations, ${username}`);
+  console.log(`Congratulations, ${username}!`);
 }

@@ -16,5 +16,5 @@ export default function primeGame(username) {
     }
     console.log('Correct!');
   }
-  return console.log(`Congratulations, ${username}`);
+  return console.log(`Congratulations, ${username}!`);
 }

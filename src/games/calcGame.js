@@ -17,5 +17,5 @@ export default function calcGame(username) {
       return;
     }
   }
-  console.log(`Congratulations, ${username}`);
+  console.log(`Congratulations, ${username}!`);
 }

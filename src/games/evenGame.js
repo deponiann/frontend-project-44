@@ -14,5 +14,5 @@ export default function evenGame(username) {
     }
     console.log('Correct!');
   }
-  return console.log(`Congratulations, ${username}`);
+  return console.log(`Congratulations, ${username}!`);
 }
