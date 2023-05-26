@@ -7,10 +7,10 @@ export default function evenGame(username) {
     console.log(`Question: ${randomNum}`);
     const userAnswer = readlineSync.question('Your answer: ');
     if (randomNum % 2 === 0 && userAnswer !== 'yes') {
-      return console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was 'yes'. Let's try again, ${username}`);
+      return console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was 'yes'. Let's try again, ${username}!`);
     }
     if (randomNum % 2 !== 0 && userAnswer !== 'no') {
-      return console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was 'no'. Let's try again, ${username}`);
+      return console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was 'no'. Let's try again, ${username}!`);
     }
     console.log('Correct!');
   }

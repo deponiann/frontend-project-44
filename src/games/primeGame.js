@@ -9,10 +9,10 @@ export default function primeGame(username) {
     const userAnswer = readlineSync.question('Your answer: ');
     const correct = isPrime(randomNum);
     if (correct === true && userAnswer !== 'yes') {
-      return console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was 'yes'. Let's try again, ${username}`);
+      return console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was 'yes'. Let's try again, ${username}!`);
     }
     if (correct === false && userAnswer !== 'no') {
-      return console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was 'no'. Let's try again, ${username}`);
+      return console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was 'no'. Let's try again, ${username}!`);
     }
     console.log('Correct!');
   }
