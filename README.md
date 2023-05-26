@@ -11,3 +11,11 @@ Welcome to my README file! :)
 ```bash
 make install
 ```
+## Games
+```bash
+make brain-even # проверка чётности
+make brain-gcd # наибольший общий делитель
+make brain-calc # калькулятор
+make brain-progression # прогрессия
+make brain-prime # проверка простоты
+```
