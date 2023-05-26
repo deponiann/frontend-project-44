@@ -8,7 +8,8 @@ export default function progressionGame(username) {
     const step = Math.floor(Math.random() * (array.length) + 1);
     const correctAnswer = array[step];
     array[step] = '..';
-    console.log(`Question: ${array}`);
+    const string = array.join(' ')
+    console.log(`Question: ${string}`);
     const userAnswer = readlineSync.question('Your answer: ');
     const result = correctCheck(userAnswer, correctAnswer, username);
     if (result === false) {
