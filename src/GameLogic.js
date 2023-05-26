@@ -30,6 +30,18 @@ array[i+1] = Num
 return array
 }
 
+export default function isPrime(num) {
+    if (num <= 1) {
+      return false;
+    }
+    for (let i = 2; i <= Math.sqrt(num); i = i + 1) {
+      if (num % i === 0) {
+        return false;
+      }
+    }
+    return true;
+}
+
 
 // export function randomNum() {
 //   return Math.floor(Math.random() * (20) + 1);

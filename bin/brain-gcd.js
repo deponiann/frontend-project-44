@@ -4,7 +4,6 @@ import readlineSync from 'readline-sync';
 import { username, cli } from '../src/cli.js';
 import { NOD } from '../src/GameLogic.js';
 
-cli()
 function gcdGame(username) {
     console.log("Find the greatest common divisor of given numbers.")
     for (let i = 0; i < 3; i += 1) {
@@ -21,6 +20,8 @@ function gcdGame(username) {
     }
     return console.log(`Congratulations, ${username}`);
 }
-gcdGame(username)
+
+cli();
+gcdGame(username);
 
 export default gcdGame;

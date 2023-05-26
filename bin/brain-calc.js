@@ -3,8 +3,6 @@
 import readlineSync from 'readline-sync';
 import { username, cli } from '../src/cli.js';
 
-cli()
-
 function calcGame(username) {
     console.log('What is the result of the expression?.');
     for (let i = 0; i < 3; i += 1) {
@@ -24,6 +22,7 @@ function calcGame(username) {
     return console.log(`Congratulations, ${username}`);
   }
 
-calcGame(username)
+cli();
+calcGame(username);
 
 export default calcGame;

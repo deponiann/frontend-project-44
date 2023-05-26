@@ -3,7 +3,6 @@
 import readlineSync from 'readline-sync';
 import { username, cli } from '../src/cli.js';
 
-cli()
 function evenGame(username) {
   console.log('Answer "yes" if the number is even, otherwise answer "no".');
   for (let i = 0; i < 3; i += 1) {
@@ -16,12 +15,13 @@ function evenGame(username) {
     if (randomNum % 2 !== 0 & userAnswer !== 'no') {
       return console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was 'no'. Let's try again, ${username}`);
     } else {
-      console.log("Correct!")
+      console.log("Correct!");
     }
   }
   return console.log(`Congratulations, ${username}`);
 }
 
-evenGame(username)
+cli();
+evenGame(username);
 
 export default evenGame;

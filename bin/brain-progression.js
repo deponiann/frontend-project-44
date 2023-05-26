@@ -4,7 +4,6 @@ import readlineSync from 'readline-sync';
 import { username, cli } from '../src/cli.js';
 import { randomArray } from '../src/GameLogic.js';
 
-cli()
 function progressionGame(username) {
     console.log("What number is missing in the progression?")
     for (let i = 0; i < 3; i += 1) {
@@ -23,4 +22,5 @@ function progressionGame(username) {
     return console.log(`Congratulations, ${username}`);
 }
 
+cli();
 progressionGame(username)
